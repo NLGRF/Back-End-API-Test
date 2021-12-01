@@ -2,9 +2,9 @@
 - fork this repository
 - clone and coding
 - push and pull request to this repository
-## Create Todo List API with .NET(C#)
+## Create Todo List API with .NET(C#)/FastAPI(Python)
 - `Database` : `sqlite3` or Other you can do
-- `Programming Language` : `C#`
+- `Programming Language` : `C#/Python`
 ### Part 1 : CRUD (Create, Read, Update and Delete)
 - add data to database
 - show all data

@@ -9,24 +9,24 @@
 - user schema
 ```json
 {
-"id": ?
-"userName":?
-"password": ?
-"email": ?
-"firstName": ?
-"lastName": ?
-"phoneNumber": ?
+"id": ?,
+"userName":?,
+"password": ?,
+"email": ?,
+"firstName": ?,
+"lastName": ?,
+"phoneNumber": ?,
 "role": ?
 }
 ```
 - todolist schema
 ```json
 {
-"id": ?
-"title":?
-"dueDate": ?
-"description": ?
-"userId": ?
+"id": ?,
+"title":?,
+"dueDate": ?,
+"description": ?,
+"userId": ?,
 "completed": ?
 }
 ```
@@ -50,29 +50,52 @@
 ### Part 2 : Run with Docker
 - dockerfile
 - docker-compose
-## Create Aggregation API with FastAPI(Python)
+## Aggregation API with FastAPI(Python)
 - `Database` : (`Sqlite3` or `PostgreSQL` or `Microsoft SQL Server`) and `BigQuery` with ORM (`SQLAlchemy/Pydantic`)
 - `Programming Language` : `Python 3`
 
 ### Part 0 : Data Schema
+- propertyType
+```json
+{
+    "บ้านเดี่ยว': 'S',
+    'บ้านแฝด': 'D',
+    'บ้านเเฝด': 'D',
+    'ทาวน์โฮม': 'T',
+    'คอนโดมิเนี่ยม': 'C',
+    'อาคารพาณิชย์': 'B',
+}
+```
+- bigquery-public-data.country_codes.country_codes
+```json
+{
+    "country_name" : string,
+    "alpha_2_code" : string,
+    "alpha_3_code" : string
+}
+```
 - main schema
-```json
-{
-}
-```
+    - projects.csv to your database
+    ```json
+    {
+    }
+    ```
 - other schema
-```json
-{
-}
-```
+    - import 2023-02-01_2023-02-28.csv to script
+    ```json
+    {
+    }
+    ```
 ### Part 1 : Aggregation Endpoint (Read and Update)
 - async/await
 - pytest
 - swagger ui
+- add country_name by cityCode (xxyy) from bigquery-public-data.country_codes.country_codes by start xx code
+  - example : 6644 (cityCode) -> 66yy -> Thailand (country_name)
 ### Part 2 : Run with Docker
 - dockerfile
 - docker-compose
-## DS with Python
+## DS with Python (Extra)
 - NLP with PythaiNLP (custom corpus)
 - OCR for Thai Language
 - Search Engine with Elasticsearch and Kibana and PythaiNLP (custom corpus)

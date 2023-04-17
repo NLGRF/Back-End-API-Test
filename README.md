@@ -16,7 +16,7 @@
 "firstName": ?
 "lastName": ?
 "phoneNumber": ?
-"role": ? (admin, user)
+"role": ?
 }
 ```
 - todolist schema
@@ -31,7 +31,7 @@
 }
 ```
 ### Part 1 : CRUD Endpoint User/TodoList (Create, Read, Update and Delete)
-### `Authentication and Authorization with JWT for using TodoList API`
+### `Authentication and Authorization with JWT for using TodoList API role admin and user`
 - async/await
 - pytest
 - swagger ui

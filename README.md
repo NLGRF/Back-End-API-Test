@@ -47,6 +47,9 @@
 - show data by page number and limit data
     - show x data by page number ; x = limit data
 
+### Part 2 : Run with Docker
+- dockerfile
+- docker-compose
 ## Create Aggregation API with FastAPI(Python)
 - `Database` : (`Sqlite3` or `PostgreSQL` or `Microsoft SQL Server`) and `BigQuery` with ORM (`SQLAlchemy/Pydantic`)
 - `Programming Language` : `Python 3`
@@ -66,7 +69,9 @@
 - async/await
 - pytest
 - swagger ui
-
+### Part 2 : Run with Docker
+- dockerfile
+- docker-compose
 ## DS with Python
 - NLP with PythaiNLP (custom corpus)
 - OCR for Thai Language

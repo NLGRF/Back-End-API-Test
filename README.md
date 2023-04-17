@@ -2,24 +2,38 @@
 - fork this repository
 - clone and coding
 - push and pull request to this repository
-## Create Todo List API with .NET(C#)/FastAPI(Python)/Gin(Golang)
-- `Database` : `sqlite3` or Other you can do
-- `Programming Language` : `C#/Python/Golang`
+## User API and TodoList API with FastAPI(Python)
+- `Database` : `Sqlite3` or `PostgreSQL` or `Microsoft SQL Server` with ORM (`SQLAlchemy/Pydantic`) 
+- `Programming Language` : `Python 3`
 ### Part 0 : Data Schema
-- main schema
+- user schema
 ```json
 {
-"userId": ?
+"id": ?
+"userName":?
+"password": ?
+"email": ?
+"firstName": ?
+"lastName": ?
+"phoneNumber": ?
+"role": ? (admin, user)
+}
+```
+- todolist schema
+```json
+{
 "id": ?
 "title":?
-"image": ?
-"details": ?
+"dueDate": ?
+"description": ?
+"userId": ?
 "completed": ?
 }
 ```
-- other schema
-    - Modify your schema according to the API conditions you want to do
-### Part 1 : CRUD Endpoint (Create, Read, Update and Delete)
+### Part 1 : CRUD Endpoint User/TodoList (Create, Read, Update and Delete)
+### `Authentication and Authorization with JWT for using TodoList API`
+- async/await
+- pytest
 - swagger ui
 - add data to database
 - show all data
@@ -29,10 +43,34 @@
 - sort by last time created
 - sort by last time updated
 - select completed only
-- you can do (extra)
-### Part 2 : Pagination (Extra)
 - show 5 data by page number
-- show data by page number and limit data (extra)
+- show data by page number and limit data
     - show x data by page number ; x = limit data
+
+## Create Aggregation API with FastAPI(Python)
+- `Database` : (`Sqlite3` or `PostgreSQL` or `Microsoft SQL Server`) and `BigQuery` with ORM (`SQLAlchemy/Pydantic`)
+- `Programming Language` : `Python 3`
+
+### Part 0 : Data Schema
+- main schema
+```json
+{
+}
+```
+- other schema
+```json
+{
+}
+```
+### Part 1 : Aggregation Endpoint (Read and Update)
+- async/await
+- pytest
+- swagger ui
+
+## DS with Python
+- NLP with PythaiNLP (custom corpus)
+- OCR for Thai Language
+- Search Engine with Elasticsearch and Kibana and PythaiNLP (custom corpus)
+- Recommendation System with Image and Text
 
 Good Luck!

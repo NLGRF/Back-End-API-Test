@@ -90,8 +90,15 @@
 - async/await
 - pytest
 - swagger ui
+- Aggregation data `2023-02-01_2023-02-28.csv` and `projects.csv`
+- group by and summary data `2023-02-01_2023-02-28.csv` by `ga:pagePathLevel1` and `ga:pagePathLevel2`
 - add country_name by cityCode (xxyy) from bigquery-public-data.country_codes.country_codes by start xx code
   - example : 6644 (cityCode) -> 66yy -> Thailand (country_name)
+- logoMediaId to logoMediaUrl (https://www.createder.com/media/xxxxx.jpg)
+- filter by propertyType
+- filter by country_name
+- filter by cityCode
+- filter price range
 ### Part 2 : Run with Docker
 - dockerfile
 - docker-compose
